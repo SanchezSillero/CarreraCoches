@@ -9,8 +9,13 @@ public class Coche {
     private double velocidad;
     private double kmRecorridos;
 
+//constructors
 
     public Coche() {
+    }
+
+    public Coche(double velocidad) {
+        this.velocidad = velocidad;
     }
 
     public Coche(String marca, String modelo, int cv, int cc, String matricula, double velocidad, double kmRecorridos) {
@@ -23,9 +28,30 @@ public class Coche {
         this.kmRecorridos = kmRecorridos;
     }
 
+//metodos
+
+    public void acelerar(int sumaVelocidad) {
+        if (cv < 100) {
+            this.velocidad += Math.random() * sumaVelocidad;
+            this.kmRecorridos += (velocidad / 2);
+        } else if (cv >= 100) {
+            this.velocidad += (Math.random() * sumaVelocidad) + 10;
+            this.kmRecorridos += (velocidad / 2);
+        }
+    }
+
+    public void mostrarDatos() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("cv: " + cv);
+        System.out.println("cc: " + cc);
+        System.out.println("Matrícula: " + matricula);
+        System.out.println("Velocidad: " + velocidad);
+        System.out.println("km recorridos: " + kmRecorridos);
+    }
 
 
-
+    //getter and setter
     public String getMarca() {
         return marca;
     }
