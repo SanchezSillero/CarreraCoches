@@ -1,10 +1,12 @@
+import cochesCarrera.Carrera;
 import cochesCarrera.Coche;
 
 public class Entrada {
     public static void main(String[] args) {
-        Coche coche1 = new Coche("Seat", "Ibiza", 75, 1400, "4562COR", 40, 100);
-        coche1.mostrarDatos();
-        coche1.acelerar(5);
-        coche1.mostrarDatos();
+        Coche coche1 = new Coche("Seat", "Ibiza", 120, 1400, "18124S", 0, 0);
+        Coche coche2 = new Coche("Audi", "A4", 150, 1800, "41614A", 0, 0);
+
+        Carrera carrera = new Carrera();
+        carrera.iniciarCarrera(coche1,coche2,15, 350);
     }
 }
