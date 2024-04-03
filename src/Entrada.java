@@ -7,6 +7,7 @@ public class Entrada {
         Coche coche2 = new Coche("Audi", "A4", 150, 1800, "41614A", 0, 0);
 
         Carrera carrera = new Carrera();
-        carrera.iniciarCarrera(coche1,coche2,15, 350);
+        carrera.iniciarCarrera(coche1,coche2, 10, 10000);
+        System.out.println("El ganador es el "+carrera.getGanador());
     }
 }
