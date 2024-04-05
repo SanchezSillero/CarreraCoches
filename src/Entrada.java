@@ -1,5 +1,5 @@
-import cochesCarrera.Carrera;
-import cochesCarrera.Coche;
+import model.Carrera;
+import model.Coche;
 
 public class Entrada {
     public static void main(String[] args) {

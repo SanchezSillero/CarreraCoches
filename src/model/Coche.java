@@ -1,4 +1,4 @@
-package cochesCarrera;
+package model;
 
 public class Coche {
     private String marca;

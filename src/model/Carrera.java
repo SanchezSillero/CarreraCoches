@@ -1,4 +1,4 @@
-package cochesCarrera;
+package model;
 
 public class Carrera {
     private Coche coche1, coche2;
